@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST['login']) && isset($_POST['pw'])){
+    //session_start();
     $login = sanitizeString($_POST['login']);
     $passwrod = sanitizeString(($_POST['pw']));
     setcookie("userLogin", $login, 0, "/");
